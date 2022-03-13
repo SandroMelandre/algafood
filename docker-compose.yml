@@ -2,11 +2,11 @@ version: '3'
 
 services:
 
-  docker-mysql:
+  podman-mysql-algafood:
 
     restart: always
 
-    container_name: docker-mysql-algafood
+    container_name: podman-mysql-algafood
 
     image: mysql
 
@@ -18,10 +18,10 @@ services:
 
       MYSQL_ROOT_HOST: '%'
 
-    volumes:
+        # volumes:
 
-      - ./sql:/docker-entrypoint-initdb.d
-    
+      # - ./data:/docker-entrypoint-initdb.d
+
 
     ports:
 
