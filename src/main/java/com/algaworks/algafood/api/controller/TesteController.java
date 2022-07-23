@@ -78,7 +78,7 @@ public class TesteController {
   public List<Restaurante> restaurantesComFreteGratis(String nome) {
 //    var comFreteGratis = new RestauranteComFreteGratisSpec();
 //    var comNomeSemelhante =  new RestauranteComNomeSemelhanteSpec(nome);
-    return restauranteRepository.findAll(comFreteGratis().and( comNomeSemelhante(nome)));
+    return restauranteRepository.findFreteGratis(nome);
   }
 
 }
