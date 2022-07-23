@@ -81,6 +81,16 @@ public class TesteController {
     return restauranteRepository.findFreteGratis(nome);
   }
 
+  @GetMapping("/restaurantes/primeiro")
+  public Optional<Restaurante> RestaurantePrimeiro() {
+    return restauranteRepository.buscarPrimeiro();
+  }
+
+  @GetMapping("/cozinhas/primeiro")
+  public Optional<Cozinha> CozinhaPrimeiro() {
+    return cozinhaRepository.buscarPrimeiro();
+  }
+
 }
 
 
