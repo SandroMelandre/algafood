@@ -39,7 +39,6 @@ public class RestauranteRepositoryImpl implements RestauranteRepositoryQueries  
 
         }
 
-
         if(taxaFreteInicial !=null){
             predicates.add(builder.greaterThanOrEqualTo(root.get("taxaFrete"), taxaFreteInicial));
         }
