@@ -10,4 +10,4 @@ podman run -d -e MYSQL_ROOT_PASSWORD=karma  --name mysql-db  -p 127.0.0.1:3307:3
 
 
 #flyway repair
- ./mvnw flyway:repair -Dflayway.configFiles=src/main/resources/flyway.properties
+ ./mvnw flyway:repair -Dflyway.configFiles=src/main/resources/flyway.properties
